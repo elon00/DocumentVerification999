@@ -1,0 +1,12 @@
+[package]
+name = "CompleteFileHashVerifier"
+version = "1.0.0"
+authors = []
+
+[addresses]
+file_hash_verifier_addr = "0x1f1edd956dab0105738252eddc877fba00d36dcf1e230ba6fc848bf845e32547"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-framework.git", rev = "mainnet", subdir = "aptos-framework" }
+
+[dev-dependencies]
