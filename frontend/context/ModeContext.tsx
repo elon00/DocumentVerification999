@@ -18,9 +18,10 @@ interface ModeProviderProps {
 
 export function ModeProvider({ children }: ModeProviderProps) {
   const [currentMode, setCurrentMode] = useState<AppMode>(() => {
+    // Always default to blockchain mode for production
     // Load mode from localStorage on initialization
     const savedMode = localStorage.getItem('appMode');
-    return (savedMode === 'blockchain' || savedMode === 'demo') ? savedMode : 'demo';
+    return (savedMode === 'blockchain' || savedMode === 'demo') ? savedMode : 'blockchain';
   });
 
   // Save mode to localStorage whenever it changes

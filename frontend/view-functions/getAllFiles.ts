@@ -15,10 +15,11 @@ export type FileRecord = {
 
 export const getAllFiles = async (): Promise<FileRecord[]> => {
   try {
-    console.log("🔍 Attempting to fetch files from contract:", MODULE_ADDRESS);
+    console.log("🔍 Fetching files from contract:", MODULE_ADDRESS);
     
     if (!MODULE_ADDRESS || MODULE_ADDRESS === "0x1") {
-      throw new Error("MODULE_ADDRESS not configured");
+      console.warn("⚠️ MODULE_ADDRESS not properly configured");
+      return []; // Return empty array instead of throwing
     }
     
     const result = await aptos.view({
@@ -28,15 +29,34 @@ export const getAllFiles = async (): Promise<FileRecord[]> => {
       },
     });
 
-    console.log("✅ Successfully fetched files from blockchain:", result);
+    console.log("✅ Successfully fetched files from blockchain");
     
     // The result comes as [FileRecord[]] so we need to access the first element
     const files = result[0] as FileRecord[];
     
-    // Keep the hex string format as returned from the blockchain
-    return files;
-  } catch (error) {
-    console.error("❌ Error fetching all files:", error);
-    throw error; // Re-throw the error so the component can handle it
+    // Validate and clean the data
+    const validFiles = files.filter(file => 
+      file && 
+      file.file_name && 
+      file.file_hash && 
+      file.uploader && 
+      file.timestamp
+    );
+    
+    console.log(`📊 Processed ${validFiles.length} valid files out of ${files.length} total`);
+    
+    return validFiles;
+  } catch (error: any) {
+    console.error("❌ Error fetching files:", error);
+    
+    // Don't throw error, return empty array to prevent app crash
+    if (error.message?.includes('not found') || error.message?.includes('does not exist')) {
+      console.log("📝 Contract not deployed yet or no files stored");
+      return [];
+    }
+    
+    // For other errors, still return empty array but log the issue
+    console.error("🔴 Unexpected error, returning empty array:", error.message);
+    return [];
   }
 };

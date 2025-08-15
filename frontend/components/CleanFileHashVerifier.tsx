@@ -27,7 +27,7 @@ import {
   HardDrive
 } from "lucide-react";
 
-export function CleanFileHashVerifier() {
+export function CleanFileHashVerifier({ onDataUpdate }: { onDataUpdate?: () => void }) {
   const { account, signAndSubmitTransaction } = useWallet();
   
   // Store tab state
@@ -271,49 +271,8 @@ export function CleanFileHashVerifier() {
 
     setIsStoring(true);
     try {
-      // First test with a simple fixed hash to debug
-      console.log("🧪 Testing with simple fixed values...");
-      
-      const testTransaction: InputTransactionData = {
-        data: {
-          function: `${MODULE_ADDRESS}::complete_file_hash_verifier::store_file_hash`,
-          functionArguments: [
-            "debug_test.txt", // Simple string
-            [1, 2, 3, 4, 5, 6, 7, 8] // Simple 8-byte array
-          ],
-        },
-      };
-      
-      console.log("🔍 Test transaction:", JSON.stringify(testTransaction, null, 2));
-      
-      await submitTransactionWithToast(
-        signAndSubmitTransaction,
-        testTransaction,
-        {
-          successTitle: "✅ File Hash Stored!",
-          successDescription: `File "${storeFile.name}" hash stored on blockchain`,
-          onSuccess: () => {
-            console.log("✅ Success! Now trying with actual file...");
-            // If test succeeds, try with actual file
-            storeActualFile();
-          }
-        }
-      );
-    } catch (error) {
-      console.error("❌ Failed to store file hash:", error);
-    } finally {
-      setIsStoring(false);
-    }
-  };
-
-  // Separate function for actual file storage
-  const storeActualFile = async () => {
-    if (!storeFile || !account || !signAndSubmitTransaction) return;
-    
-    setIsStoring(true);
-    try {
       const hash = await calculateFileHash(storeFile);
-      console.log("📁 File:", storeFile.name, "Hash bytes:", hash.length);
+      console.log("📁 Storing file:", storeFile.name, "Hash bytes:", hash.length);
       
       const transaction: InputTransactionData = {
         data: {
@@ -335,12 +294,17 @@ export function CleanFileHashVerifier() {
             setFilePreview(null);
             // Reload blockchain files to show the newly added file
             loadBlockchainFiles();
+            // Notify parent component to refresh data
+            if (onDataUpdate) {
+              console.log("🔄 Notifying parent to refresh data...");
+              onDataUpdate();
+            }
           }
         }
       );
       
     } catch (error: any) {
-      console.error("Error storing actual file:", error);
+      console.error("❌ Error storing file hash:", error);
       // Error handling is done in submitTransactionWithToast
     } finally {
       setIsStoring(false);
