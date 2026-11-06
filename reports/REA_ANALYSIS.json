@@ -1,0 +1,365 @@
+{
+  "engine": "REA_Reverse_Engineer_Anything",
+  "status": "STRUCTURE_RECONSTRUCTED",
+  "analyzed_files": 119,
+  "manifest": {
+    "BLOCKCHAIN_DATA_EXPLANATION.md": {
+      "bytes": 0
+    },
+    "components.json": {
+      "bytes": 362
+    },
+    "debug-blockchain.js": {
+      "bytes": 0
+    },
+    "deploy-contract.js": {
+      "bytes": 3354
+    },
+    "DEPLOYMENT_GUIDE.md": {
+      "bytes": 4717
+    },
+    "DEPLOYMENT_SUCCESS.md": {
+      "bytes": 2693
+    },
+    "image.png": {
+      "bytes": 104227
+    },
+    "index.html": {
+      "bytes": 652
+    },
+    "LICENSE": {
+      "bytes": 11131
+    },
+    "Move.toml": {
+      "bytes": 347
+    },
+    "package.json": {
+      "bytes": 2047
+    },
+    "postcss.config.js": {
+      "bytes": 89
+    },
+    "PROJECT_STRUCTURE.md": {
+      "bytes": 8830
+    },
+    "README.md": {
+      "bytes": 7458
+    },
+    "Screenshot 2025-08-05 154542-1.png": {
+      "bytes": 269858
+    },
+    "Screenshot 2025-08-05 154639.png": {
+      "bytes": 95834
+    },
+    "setup-blockchain.bat": {
+      "bytes": 1697
+    },
+    "tailwind.config.js": {
+      "bytes": 5475
+    },
+    "test-contract.js": {
+      "bytes": 1162
+    },
+    "testSimpleTransaction.ts": {
+      "bytes": 1086
+    },
+    "TRANSACTION_SIGNING_IMPLEMENTATION.md": {
+      "bytes": 5251
+    },
+    "tsconfig.json": {
+      "bytes": 730
+    },
+    "tsconfig.node.json": {
+      "bytes": 244
+    },
+    "vite-env.d.ts": {
+      "bytes": 39
+    },
+    "vite.config.ts": {
+      "bytes": 347
+    },
+    "contract\\image.png": {
+      "bytes": 0
+    },
+    "contract\\Move.toml": {
+      "bytes": 355
+    },
+    "contract\\test-file.txt": {
+      "bytes": 64
+    },
+    "frontend\\App-new.tsx": {
+      "bytes": 0
+    },
+    "frontend\\App.tsx": {
+      "bytes": 370
+    },
+    "frontend\\constants.ts": {
+      "bytes": 276
+    },
+    "frontend\\index.css": {
+      "bytes": 8672
+    },
+    "frontend\\main.tsx": {
+      "bytes": 769
+    },
+    "public\\aptos.png": {
+      "bytes": 8699
+    },
+    "scripts\\rea_inspector.py": {
+      "bytes": 1485
+    },
+    "scripts\\rsi_engine.py": {
+      "bytes": 2039
+    },
+    "sources\\file_hash_verifier.move": {
+      "bytes": 6826
+    },
+    "tests\\reality_check_harness.py": {
+      "bytes": 1250
+    },
+    ".github\\workflows\\qmoosa-rsi-rea-sync.yml": {
+      "bytes": 531
+    },
+    "contract\\sources\\file_hash_verifier.move": {
+      "bytes": 18191
+    },
+    "contract\\sources\\simple_file_hash_verifier.move": {
+      "bytes": 10041
+    },
+    "contract\\tests\\test_end_to_end.move": {
+      "bytes": 1901
+    },
+    "frontend\\components\\AccountInfo.tsx": {
+      "bytes": 1006
+    },
+    "frontend\\components\\BlockchainFileHashVerifier.tsx": {
+      "bytes": 32878
+    },
+    "frontend\\components\\CleanDashboardLayout.tsx": {
+      "bytes": 18582
+    },
+    "frontend\\components\\CleanDashboardLayout_old.tsx": {
+      "bytes": 19337
+    },
+    "frontend\\components\\CleanEducationHub.tsx": {
+      "bytes": 36094
+    },
+    "frontend\\components\\CleanFileHashVerifier.tsx": {
+      "bytes": 31723
+    },
+    "frontend\\components\\ComprehensiveTest.tsx": {
+      "bytes": 7221
+    },
+    "frontend\\components\\DashboardLayout.tsx": {
+      "bytes": 7807
+    },
+    "frontend\\components\\DiagnosticApp.tsx": {
+      "bytes": 1105
+    },
+    "frontend\\components\\EducationHub.tsx": {
+      "bytes": 0
+    },
+    "frontend\\components\\FileHashVerifier.tsx": {
+      "bytes": 13156
+    },
+    "frontend\\components\\FileHashVerifierWithModes.tsx": {
+      "bytes": 2366
+    },
+    "frontend\\components\\Header.tsx": {
+      "bytes": 605
+    },
+    "frontend\\components\\LabelValueGrid.tsx": {
+      "bytes": 1145
+    },
+    "frontend\\components\\MessageBoard.tsx": {
+      "bytes": 2603
+    },
+    "frontend\\components\\MinimalTransactionTest.tsx": {
+      "bytes": 2013
+    },
+    "frontend\\components\\MockBlockchainFileHashVerifier.tsx": {
+      "bytes": 29591
+    },
+    "frontend\\components\\ModernFileList.tsx": {
+      "bytes": 7149
+    },
+    "frontend\\components\\ModernFileUpload.tsx": {
+      "bytes": 6779
+    },
+    "frontend\\components\\ModernHeader.tsx": {
+      "bytes": 3369
+    },
+    "frontend\\components\\ModernStatsDashboard.tsx": {
+      "bytes": 4037
+    },
+    "frontend\\components\\NetworkInfo.tsx": {
+      "bytes": 1313
+    },
+    "frontend\\components\\OrganizationManager.tsx": {
+      "bytes": 12653
+    },
+    "frontend\\components\\ProfessionalHeader.tsx": {
+      "bytes": 5034
+    },
+    "frontend\\components\\SimpleDashboard.tsx": {
+      "bytes": 0
+    },
+    "frontend\\components\\SimpleHeader.tsx": {
+      "bytes": 0
+    },
+    "frontend\\components\\SimpleWalletDebug.tsx": {
+      "bytes": 3239
+    },
+    "frontend\\components\\TopBanner.tsx": {
+      "bytes": 880
+    },
+    "frontend\\components\\TransferAPT.tsx": {
+      "bytes": 2970
+    },
+    "frontend\\components\\UniversalModeSelector.tsx": {
+      "bytes": 4861
+    },
+    "frontend\\components\\UserDashboard.tsx": {
+      "bytes": 0
+    },
+    "frontend\\components\\WalletDetails.tsx": {
+      "bytes": 1032
+    },
+    "frontend\\components\\WalletProvider.tsx": {
+      "bytes": 796
+    },
+    "frontend\\components\\WalletSelector.tsx": {
+      "bytes": 9031
+    },
+    "frontend\\components\\WrongNetworkAlert.tsx": {
+      "bytes": 1353
+    },
+    "frontend\\context\\ModeContext.tsx": {
+      "bytes": 2069
+    },
+    "frontend\\entry-functions\\registerOrganization.ts": {
+      "bytes": 688
+    },
+    "frontend\\entry-functions\\storeEducationDocument.ts": {
+      "bytes": 918
+    },
+    "frontend\\entry-functions\\storeFileHash.ts": {
+      "bytes": 800
+    },
+    "frontend\\entry-functions\\testTransaction.ts": {
+      "bytes": 371
+    },
+    "frontend\\entry-functions\\transferAPT.ts": {
+      "bytes": 523
+    },
+    "frontend\\entry-functions\\uploadEducationDocument.ts": {
+      "bytes": 1057
+    },
+    "frontend\\entry-functions\\verifyFileHash.ts": {
+      "bytes": 804
+    },
+    "frontend\\entry-functions\\writeMessage.ts": {
+      "bytes": 480
+    },
+    "frontend\\lib\\utils.ts": {
+      "bytes": 175
+    },
+    "frontend\\utils\\aptosClient.ts": {
+      "bytes": 346
+    },
+    "frontend\\utils\\clearDemoData.ts": {
+      "bytes": 1612
+    },
+    "frontend\\utils\\contractUtils.ts": {
+      "bytes": 1216
+    },
+    "frontend\\utils\\helpers.ts": {
+      "bytes": 464
+    },
+    "frontend\\utils\\startupCleanup.ts": {
+      "bytes": 1499
+    },
+    "frontend\\utils\\statsCalculator.ts": {
+      "bytes": 1627
+    },
+    "frontend\\utils\\transactionHelpers.ts": {
+      "bytes": 2931
+    },
+    "frontend\\view-functions\\getAccountBalance.ts": {
+      "bytes": 517
+    },
+    "frontend\\view-functions\\getAllFiles.ts": {
+      "bytes": 2107
+    },
+    "frontend\\view-functions\\getEducationDocuments.ts": {
+      "bytes": 2778
+    },
+    "frontend\\view-functions\\getFileByName.ts": {
+      "bytes": 1037
+    },
+    "frontend\\view-functions\\getMessageContent.ts": {
+      "bytes": 468
+    },
+    "frontend\\view-functions\\getOrganizations.ts": {
+      "bytes": 2165
+    },
+    "frontend\\view-functions\\getTotalFiles.ts": {
+      "bytes": 673
+    },
+    "frontend\\components\\ui\\button.tsx": {
+      "bytes": 2189
+    },
+    "frontend\\components\\ui\\card.tsx": {
+      "bytes": 2171
+    },
+    "frontend\\components\\ui\\collapsible.tsx": {
+      "bytes": 324
+    },
+    "frontend\\components\\ui\\dialog.tsx": {
+      "bytes": 3955
+    },
+    "frontend\\components\\ui\\dropdown-menu.tsx": {
+      "bytes": 7493
+    },
+    "frontend\\components\\ui\\input.tsx": {
+      "bytes": 849
+    },
+    "frontend\\components\\ui\\label.tsx": {
+      "bytes": 750
+    },
+    "frontend\\components\\ui\\tabs.tsx": {
+      "bytes": 1936
+    },
+    "frontend\\components\\ui\\toast.tsx": {
+      "bytes": 4972
+    },
+    "frontend\\components\\ui\\toaster.tsx": {
+      "bytes": 813
+    },
+    "frontend\\components\\ui\\use-toast.ts": {
+      "bytes": 4161
+    },
+    "public\\icons\\icon-192x192.png": {
+      "bytes": 8394
+    },
+    "public\\icons\\icon-384x384.png": {
+      "bytes": 17851
+    },
+    "public\\icons\\icon-512x512.png": {
+      "bytes": 23528
+    },
+    "scripts\\move\\compile.js": {
+      "bytes": 629
+    },
+    "scripts\\move\\publish.js": {
+      "bytes": 2176
+    },
+    "scripts\\move\\test.js": {
+      "bytes": 312
+    },
+    "scripts\\move\\upgrade.js": {
+      "bytes": 846
+    }
+  },
+  "timestamp": 1793994495
+}
