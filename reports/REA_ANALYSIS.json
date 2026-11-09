@@ -1,7 +1,7 @@
 {
   "engine": "REA_Reverse_Engineer_Anything",
   "status": "STRUCTURE_RECONSTRUCTED",
-  "analyzed_files": 119,
+  "analyzed_files": 121,
   "manifest": {
     "BLOCKCHAIN_DATA_EXPLANATION.md": {
       "bytes": 0
@@ -104,6 +104,12 @@
     },
     "public\\aptos.png": {
       "bytes": 8699
+    },
+    "reports\\RAVEN_RSI_DIAGNOSTIC.json": {
+      "bytes": 388
+    },
+    "reports\\REA_ANALYSIS.json": {
+      "bytes": 8829
     },
     "scripts\\rea_inspector.py": {
       "bytes": 1485
@@ -361,5 +367,5 @@
       "bytes": 846
     }
   },
-  "timestamp": 1793994495
+  "timestamp": 1794222588
 }
