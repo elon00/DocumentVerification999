@@ -33,3 +33,6 @@ pnpm-lock.yaml
 
 # template related files
 example-collection/
+
+# Lean 4 build artifacts
+lean_verify/.lake/
